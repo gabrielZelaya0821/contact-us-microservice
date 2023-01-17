@@ -22,7 +22,9 @@ public class AppExceptionHandler {
 		});
 		return errorMap;
 	}
-	
+
+
+	//TODO: Este deberia ser 404 NOT FOUND. Eso es lo deberia de representar ClientNotFoundException.
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	@ExceptionHandler(ClientNotFoundException.class)
 	public Map<String,String> handleBusinessException(ClientNotFoundException e){

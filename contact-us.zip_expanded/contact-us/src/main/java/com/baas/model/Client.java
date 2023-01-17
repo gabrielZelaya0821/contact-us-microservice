@@ -28,26 +28,33 @@ public class Client {
 	@JsonProperty
 	@NotBlank(message = "Must enter an address")
 	private String address;
+
+	//LIKE CONTAINS Ignore case
 	
 	@Column(name="phone_num",nullable = false,length = 64)
 	@JsonProperty
 	@NotNull(message = "Must enter a phone number")
 	private int phoneNum;
+	//startsWith
 	
 	@Column(name = "email",nullable = false,length = 64)
 	@JsonProperty
 	@Email(message = "Invalid email address")
 	private String email;
-	
+	//like
+
 	@Column(name = "company",nullable = false,length = 64)
 	@JsonProperty
 	@NotBlank(message = "Must enter a company name")
 	private String company;
-	
+	//ignoreCase
+
+
 	@Column(name = "question",length = 256)
 	@JsonProperty
 	@NotBlank(message = "Must enter a question")
 	private String question;
+	//like
 	
 	public static void perepareToPersist(Client client) {
 		client.setClientId(UUID.randomUUID().toString());
