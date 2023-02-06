@@ -1,0 +1,13 @@
+com\baas\ThrowException\QuestionNotFoundException.class
+com\baas\repository\QuestionRepository.class
+com\baas\ThrowException\ClientNotFoundException.class
+com\baas\model\Client$ClientBuilder.class
+com\baas\service\ClientService.class
+com\baas\ContactUsApplication.class
+com\baas\repository\ClientRepository.class
+com\baas\controller\ClientController.class
+com\baas\model\Client.class
+com\baas\advice\AppExceptionHandler.class
+com\baas\model\Question$QuestionBuilder.class
+com\baas\service\QuestionService.class
+com\baas\model\Question.class
